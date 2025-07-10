@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      background-color: #101010;
+    }
+    .container {
+      margin-top: 100px;
+      background-color: #5aaec5;
+      padding: 50px;
+      border-radius: 20px;
+    }
+    #city-input {
+      padding: 10px;
+      /* display: block; */
+      border-radius: 10px;
+    }
+    #get-weather-btn {
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .hidden {
+  display: none;
+}
+
+  </style>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <div class="input-container">
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <button id="get-weather-btn">Get Weather</button>
+      </div>
+
+      <div id="weather-info" class="hidden">
+        <h2 id="city-name"></h2>
+        <p id="temperature"></p>
+        <p id="description"></p>
+      </div>
+
+      <p id="error-message" class="hidden">
+        City not found. Please Enter again
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
